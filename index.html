@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <title>Furnishh | Home</title>
+</head>
+<body>  
+  <nav class="navbar">
+    <div class="navbar-container">
+      <span class="logo">
+        <h1>Furnishh</h1>
+      </span>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="cart-btn">
+          <span class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </div>                          
+  </nav>
+
+  
+  <div class="container">
+    <!-- Showcase -->
+    <header class="showcase" id="showcase">
+      <div>
+        <h1 class="showcase-title">Elegance. Comfort. Affordability.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum consectetur sequi ut temporibus illum aliquam non nesciunt dolorem. Inventore neque enim magni aliquid quidem doloribus cum dolorum commodi voluptate.</p>
+        <a href="#products-banner" class="btn">Shop Now</a>
+      </div>
+      <img src="./images/showcase.png" id='showcaseImg' alt="showcase">           
+    </header>
+  </div>
+
+  <!-- Products banner -->
+  <div id="products-banner">
+    <h1>Our Products</h1>
+  </div>
+
+  <!-- Products section -->
+  <section class="products">
+    <div class="container" id="products-container">
+      
+    </div>
+  </section>
+
+  <!-- Cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>        
+      </span>
+      <h2>Your cart</h2>
+      <div class="cart-content">
+        <!-- Cart Items here -->
+        
+      </div>
+      <div class="cart-footer">
+        <h3>Total: $ <span class="cart-total">0</span></h3>
+        <button class="btn clear-cart">Clear cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="back-to-top">
+      <a href="#showcase"><i class="fas fa-chevron-up"></i></a>
+    </div>
+    <div class="container">
+      <div class="social">
+        <h1>Follow us</h1>
+        <a href="http://facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="http://twitter.com"><i class="fab fa-twitter-square"></i></a>
+        <a href="http://youtube.com"><i class="fab fa-youtube-square"></i></a>
+      </div>
+      <div class='company-info'>
+        <h1>Company Info</h1>
+        <ul>
+          <li><a href="#">All products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>       
+      </div>
+      <div class="subscribe">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam?</p>
+        <form action='#' class="form">
+          <div class="email-form">            
+            <input type="email" name="email" id="email" placeholder="Email" class="form-control-input">
+          
+            <button type="submit" value="Submit" class="submit-btn">
+              <i class="far fa-envelope"></i>
+            </button>
+          </div>
+        </form>
+      </div>      
+    </div>    
+  </footer>
+
+  <script src="./script.js"></script>  
+</body>
+</html>

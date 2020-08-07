@@ -1,0 +1,68 @@
+{
+  "items" : [
+    {
+      "id": "1",
+      "fields": {
+        "title": "King panel bed",
+        "price": 369.99,
+        "image": "./images/king-panel-bed.jpg"
+      }
+    },
+    {
+      "id": "2",
+      "fields": {
+        "title": "Luxury couch",
+        "price": 299.99,
+        "image": "./images/luxury-couch.jpg"
+      }
+    },
+    {
+      "id": "3",
+      "fields": {
+        "title": "Antique dresser",
+        "price": 249.99,
+        "image": "./images/antique-dresser.jpg"
+      }
+    },
+    {
+      "id": "4",
+      "fields": {
+        "title": "Armchair",
+        "price": 189.99,
+        "image": "./images/armchair.jpg"
+      }
+    },
+    {
+      "id": "5",
+      "fields": {
+        "title": "Small coffee table",
+        "price": 85.99,
+        "image": "./images/coffee-table.jpg"
+      }
+    },
+    {
+      "id": "6",
+      "fields": {
+        "title": "Office desk",
+        "price": 159.99,
+        "image": "./images/office-desk.jpg"
+      }
+    },
+    {
+      "id": "7",
+      "fields": {
+        "title": "Kitchen island",
+        "price": 569.99,
+        "image": "./images/kitchen-island.jpg"
+      }
+    },
+    {
+      "id": "8",
+      "fields": {
+        "title": "Fridge",
+        "price": 399.99,
+        "image": "./images/fridge.jpg"
+      }
+    }
+  ]
+}
