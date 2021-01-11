@@ -8,7 +8,6 @@ const productsDOM = document.querySelector('#products-container');
 const cartDOM = document.querySelector('.cart');
 const cartOverlay = document.querySelector('.cart-overlay');
 const cartContent = document.querySelector('.cart-content');
-const shwcaseImg = document.querySelector('#shwcaseIMG');
 
 let buttonsDOM = [];
 let cartArr = [];
@@ -26,8 +25,7 @@ class Products {
         const {title, price, image} = item.fields;
         
         return {id, title, price, image}
-      })
-      
+      });      
       return products;      
     }
     catch(err) {
@@ -42,7 +40,7 @@ class Interface {
     let result = '';
     products.forEach(product => {
       result += `
-        <!-- Single product -->
+        <!-- Product -->
         <article class="product">
           <div class="img-container">
             <img src="${product.image}" alt="${product.title}">
@@ -63,11 +61,10 @@ class Interface {
     buttonsDOM = buttons;
 
     buttons.forEach(button => {
-      let id = button.dataset.id;  
-         
-      let IsInCart = cartArr.find(item => item.id === id);      
+      let id = button.dataset.id;           
+      let isInCart = cartArr.find(item => item.id === id);      
       
-      if(IsInCart) {
+      if(isInCart) {
         button.innerText = 'In Cart';
         button.disabled = true;
       } 
@@ -80,11 +77,8 @@ class Interface {
         cartArr = [...cartArr, cartItem];
 
         Storage.saveCart(cartArr);
-
         this.setCartValues(cartArr);
-
         this.addItemToCart(cartItem);
-
         this.openCart();
       })
     });
@@ -235,7 +229,6 @@ class Storage {
 
   static getCart() {
     return localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
-
   }
 }
  
